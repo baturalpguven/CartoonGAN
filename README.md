@@ -1,3 +1,18 @@
+#CartoonGAN-Pix2Pix
+
+![cartoon_BEN](https://user-images.githubusercontent.com/77858949/188851868-17609846-e484-41c5-8097-2dee9354b074.png)
+
+
+
+
+![Training2](https://user-images.githubusercontent.com/77858949/188851920-ac088774-6016-4286-b345-c2f8bdae94aa.png)
+
+
+
+![Training_1](https://user-images.githubusercontent.com/77858949/188851886-a8c08327-20a2-432e-9f4a-cd26f8325acf.png)
+
+
+
 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 
