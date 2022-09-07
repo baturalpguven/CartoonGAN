@@ -3,7 +3,7 @@
 In this project the aim was to train an Pix2Pix cGAN model to generate a cartoon effect on any RGB image. GAN are extremely popular and efficent methods to make image translations. This the aspect of Pix2Pix used in this project.
 
 The output of trained network. Cartoonish version of my photo:
-![Training2](https://user-images.githubusercontent.com/77858949/188851920-ac088774-6016-4286-b345-c2f8bdae94aa.png)
+
 
 ## What is Pix2Pix Model?
 
@@ -20,6 +20,7 @@ Also, you can see the pretrained weights inside of the checkpoints faces_pix2pix
 Some results of the training process can be seen below. Real_A is the original image, fake_B is the result of the Network, and real_B is the desired image. 
 ![Training_1](https://user-images.githubusercontent.com/77858949/188851886-a8c08327-20a2-432e-9f4a-cd26f8325acf.png)
 
+![Training2](https://user-images.githubusercontent.com/77858949/188851920-ac088774-6016-4286-b345-c2f8bdae94aa.png)
 
 To test the code run the *test.IPYNB file. Also, by uploading your photos you can generate their cartoon version and have fun :). Only problem is you have to be aware of the image size limitations of the network.  
 
