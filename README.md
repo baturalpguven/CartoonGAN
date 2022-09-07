@@ -26,7 +26,7 @@ To test the code run the *test.IPYNB file. Also, by uploading your photos you ca
 For more details you can see the information below and visit the original repo. 
 
 
-
+Horse2zebra gif of the original repo: 
 <img src='imgs/horse2zebra.gif' align="right" width=384>
 
 <br><br><br>
