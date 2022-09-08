@@ -1,6 +1,6 @@
 # CartoonGAN-Pix2Pix
 
-In this project the aim was to train an Pix2Pix cGAN model to generate a cartoon effect on any RGB image. GAN are extremely popular and efficent methods to make image translations. This the aspect of Pix2Pix used in this project.
+In this project the aim was to train an Pix2Pix cGAN model to generate a cartoon effect on any RGB image. GAN are extremely popular and efficient methods to make image translations. This the aspect of Pix2Pix used in this project.
 
 The output of trained network. Cartoonish version of my photo:
 ![cartoon_BEN](https://user-images.githubusercontent.com/77858949/189077695-6c42fc58-e44f-4468-b2d4-798598e555ed.png)
@@ -8,13 +8,13 @@ The output of trained network. Cartoonish version of my photo:
 
 ## What is Pix2Pix Model?
 
-To have a better understanding I strongly suggest for you to look at the detailed explanation of the original repo and the paper but if I have to briefly explain I can say that a paired data set as such as original and desired image given to the network. The network tries to generate desired output from given original image. Other than this constrain on the dataset the main logic is the same with a cGAN which is trying to find the nash equilibrium of minmax game of Generator and Discriminator.
+To have a better understanding I strongly suggest for you to look at the detailed explanation of the original repo and the paper but if I have to briefly explain I can say that a paired data set as such as original and desired image given to the network. The network tries to generate desired output from given original image. Other than this constrain on the dataset the main logic is the same with a cGAN which is trying to find the Nash equilibrium of minmax game of Generator and Discriminator.
 
 ## How to prepare the dataset?
-Inside of the dataset folder you can find a train.h5 file generator. That file applies certain filters on images via OpenCV and generates a cartoon image. After this process the original and cartoon images concatenated to make a paired image. MIT LFW dataset used to have different set of faces. However, to reduce the # of images only people who has a name starting with “A” used in the datase. With the same file you can generate your own dataset. The train.h5 file is not in the train folder. You have to generate.
+Inside of the dataset folder you can find a train.h5 file generator. That file applies certain filters on images via OpenCV and generates a cartoon image. After this process the original and cartoon images concatenated to make a paired image. MIT LFW dataset used to have different set of faces. However, to reduce the # of images only people who has a name starting with “A” used in the dataset. With the same file you can generate your own dataset. The train.h5 file is not in the train folder. You must generate.
 
 ## How to run the code?
-In order to run it you have to use *.IPYNB file. One of them for training the other one is for testing. Inside of the training file you can set the parameters of the Network simply by modifying def_list at the beginning the file. The original code did not had a dataset reader for *.h5 files. This, it is important for you to choose --dataset mode as “hfive” this script reads the data for *.h5 files and applies augmentation. You can save the weights of the training inside of the checkpoints folder. For more details see the below explanation of the original code. 
+To run it you have to use cycleGAN_pix2pix.IPYNB file. One of them for training the other one is for testing. Inside of the training file you can set the parameters of the Network simply by modifying def_list at the beginning the file. The original code did not have a dataset reader for *.h5 files. This, it is important for you to choose --dataset mode as “hfive” this script reads the data for *.h5 files and applies augmentation. You can save the weights of the training inside of the checkpoints folder. For more details see the below explanation of the original code. 
 
 Also, you can see the pretrained weights inside of the checkpoints faces_pix2pix folder. 
 
@@ -23,9 +23,11 @@ Some results of the training process can be seen below. Real_A is the original i
 
 ![Training2](https://user-images.githubusercontent.com/77858949/188851920-ac088774-6016-4286-b345-c2f8bdae94aa.png)
 
-To test the code run the *test.IPYNB file. Also, by uploading your photos you can generate their cartoon version and have fun :). Only problem is you have to be aware of the image size limitations of the network.  
+To test the code run the cycleGAN_pix2pix_testCode.IPYNB file. Also, by uploading your photos you can generate their cartoon version and have fun :). Only problem is you must be aware of the image size limitations of the network.  
 
-
+## Future Improvements
+The loss values of the network can be tracked with simple modifications of the cycleGAN_pix2pix.IPYNB file. Already losses variable calculates the loss values of the GAN and returns is it as a state dictionary by simply storing these values you can plot the loss values. 
+Additionally, currently there is a scaling problem with my implementation. This will be handled in the future. 
 
 For more details you can see the information below and visit the original repo. 
 
