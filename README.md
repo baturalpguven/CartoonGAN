@@ -33,7 +33,11 @@ For more details you can see the information below and visit the original repo.
 
 
 Horse2zebra gif of the original repo. This can see the full capabilities wit this gif: 
-<img src='imgs/horse2zebra.gif' align="right" width=384>
+<p align="center">
+   <img src='imgs/horse2zebra.gif' align="right" width=384>
+</p>
+
+
 
 
 <br><br><br>
